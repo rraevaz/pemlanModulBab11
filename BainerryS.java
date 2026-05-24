@@ -125,9 +125,9 @@ public class BainerryS {
         timB.add(new Pemainf(168, 65));
         timB.add(new Pemainf(169, 60));
 
-        System.out.println("============================================");
-        System.out.println("   SOAL 2a: ARRAYLIST TIM A DAN TIM B");
-        System.out.println("============================================\n");
+        System.out.println("\n============================================");
+        System.out.println(" 2A. ARRAYLIST TIM A DAN TIM B");
+
         cetakTim("Tim A (sebelum sort)", timA);
         cetakTim("Tim B (sebelum sort)", timB);
         // Sort Tim B berdasarkan tinggi badan (untuk soal 2b)
@@ -138,9 +138,8 @@ public class BainerryS {
         ArrayList<Pemainf> timASortBerat = new ArrayList<>(timA);
         Collections.sort(timASortBerat, Comparator.comparingInt(p -> p.berat));
 
-        System.out.println("============================================");
-        System.out.println("   SOAL 2b: BINARY SEARCH TINGGI DI TIM B");
-        System.out.println("============================================\n");
+        System.out.println("\n============================================");
+        System.out.println(" 2B. BINARY SEARCH TINGGI DI TIM B");
 
         cetakTim("Tim B (diurut berdasarkan Tinggi)", timBSortTinggi);
 
@@ -159,8 +158,7 @@ public class BainerryS {
         }
 
         System.out.println("\n============================================");
-        System.out.println("   SOAL 2c: BINARY SEARCH BERAT DI TIM A");
-        System.out.println("============================================\n");
+        System.out.println(" 2C. BINARY SEARCH BERAT DI TIM A");
 
         cetakTim("Tim A (diurut berdasarkan Berat)", timASortBerat);
 
@@ -179,9 +177,8 @@ public class BainerryS {
         }
 
         System.out.println("\n============================================");
-        System.out.println("   SOAL 2d: CEK KESAMAAN TINGGI / BERAT");
+        System.out.println(" 2D. CEK KESAMAAN TINGGI / BERAT");
         System.out.println("       ANTARA TIM A DAN TIM B");
-        System.out.println("============================================\n");
 
         ArrayList<Pemainf> timBSortBerat = new ArrayList<>(timB);
         Collections.sort(timBSortBerat, Comparator.comparingInt(p -> p.berat));
